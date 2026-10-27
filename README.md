@@ -1,10 +1,10 @@
-# Iconocratie — v0.9.4
+# Iconocratie — v0.9.5
 
 Application HTML autonome pour organiser et projeter une bibliothèque de diaporamas.
 
 ## Utilisation
 
-Ouvrir `index.html` dans Firefox, Safari ou Chromium. Aucun serveur, compte ni installation requis. Les fichiers importés sont stockés localement dans le navigateur via IndexedDB. **Ne pas effacer les données du site/navigateur sans exporter la bibliothèque.** Pour transférer le travail sur un autre ordinateur, utiliser « Exporter bibliothèque » puis « Importer un diapo ».
+Ouvrir `index.html` dans Firefox, Safari ou Chromium. Aucun serveur, compte ni installation requis. Les fichiers importés sont stockés localement dans le navigateur via IndexedDB. **Ne pas effacer les données du site/navigateur sans exporter la bibliothèque.** Pour transférer le travail sur un autre ordinateur, utiliser « Exporter bibliothèque » puis « Importer bibliothèque ».
 
 - Colonne gauche : créer, nommer, replier et ouvrir différents diaporamas ; importer et ordonner les médias par glisser-déposer. Un média peut être déplacé vers un autre diaporama par glisser-déposer.
 - Format de projection : écran ou ratio 16:9, 4:3, 3:2, 1:1, 9:16 ou dimensions personnalisées. Réglages indépendants pour chaque diaporama.
@@ -74,3 +74,10 @@ L’interface porte le titre « Iconocratie », avec la signature discrète « d
 - Minuterie et boucle déplacées dans Préférences (engrenage).
 - Import / Export : Supprimer diapo remonte, Exporter bibliothèque est en dernière rangée.
 - Raccourcis de vitesse inchangés ; vidéos et audios restent pilotés par leur fin effective.
+
+
+## v0.9.5 — Enchaînement des diaporamas
+
+Dans Préférences, activer **Enchaîner les diaporamas** pour poursuivre automatiquement la lecture avec le prochain diaporama non vide de la bibliothèque. **Boucler toute la bibliothèque** reprend au premier après le dernier. La boucle individuelle par diaporama est ignorée en mode enchaînement. Les titres et images utilisent le timer ; les vidéos et les sons avancent à la fin réelle du média.
+
+L’ordre des diaporamas peut être changé par glisser-déposer de leur en-tête ou avec les petites flèches ↑ ↓. L’ordre est conservé localement et respecté à l’export JSON.
