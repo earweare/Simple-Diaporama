@@ -81,3 +81,7 @@ L’interface porte le titre « Iconocratie », avec la signature discrète « d
 Dans Préférences, activer **Enchaîner les diaporamas** pour poursuivre automatiquement la lecture avec le prochain diaporama non vide de la bibliothèque. **Boucler toute la bibliothèque** reprend au premier après le dernier. La boucle individuelle par diaporama est ignorée en mode enchaînement. Les titres et images utilisent le timer ; les vidéos et les sons avancent à la fin réelle du média.
 
 L’ordre des diaporamas peut être changé par glisser-déposer de leur en-tête ou avec les petites flèches ↑ ↓. L’ordre est conservé localement et respecté à l’export JSON.
+
+### v0.9.6 — Sélection multiple
+
+Cliquer pour sélectionner une diapositive, ⌘/Ctrl-clic pour ajouter/retirer, Maj-clic pour sélectionner une plage dans un même diaporama. Glisser une diapositive sélectionnée déplace l’ensemble du groupe ; la cible peut être un autre diaporama, même replié (déposer sur son en-tête). L’ordre relatif est conservé.
