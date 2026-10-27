@@ -1,4 +1,4 @@
-# Iconocratie — v0.9.3
+# Iconocratie — v0.9.4
 
 Application HTML autonome pour organiser et projeter une bibliothèque de diaporamas.
 
