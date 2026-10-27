@@ -1,4 +1,4 @@
-# Iconocratie — v0.9.5
+# Iconocratie — v0.9.8
 
 Application HTML autonome pour organiser et projeter une bibliothèque de diaporamas.
 
@@ -85,3 +85,18 @@ L’ordre des diaporamas peut être changé par glisser-déposer de leur en-têt
 ### v0.9.6 — Sélection multiple
 
 Cliquer pour sélectionner une diapositive, ⌘/Ctrl-clic pour ajouter/retirer, Maj-clic pour sélectionner une plage dans un même diaporama. Glisser une diapositive sélectionnée déplace l’ensemble du groupe ; la cible peut être un autre diaporama, même replié (déposer sur son en-tête). L’ordre relatif est conservé.
+
+
+## v0.9.7 — Annuler / Rétablir
+
+Raccourcis clavier uniquement : `⌘ Z` pour annuler, `⌘ ⇧ Z` pour rétablir. Historique de 50 étapes pendant la session ; les raccourcis sont documentés en bas des Préférences.
+
+## v0.9.8 — Bibliothèques
+
+- **Nouvelle bibliothèque** crée une collection vide et la nomme.
+- **Importer bibliothèque** remplace la bibliothèque courante après confirmation, sans créer de diaporama parasite.
+- **Sauver bibliothèque** télécharge la bibliothèque au nom du dernier fichier utilisé ou sous le nom courant.
+- **Exporter bibliothèque** propose de choisir un nouveau nom.
+- **Importer un diapo** ajoute un diaporama au lieu de remplacer la bibliothèque.
+
+Firefox télécharge le fichier JSON ; il ne peut pas écraser silencieusement un fichier déjà présent sur le disque.
