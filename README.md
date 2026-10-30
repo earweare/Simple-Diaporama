@@ -1,4 +1,4 @@
-# Iconocratie — 0.11.1
+# Iconocratie — 0.12.0
 
 Application HTML autonome et hors ligne pour organiser des bibliothèques de diaporamas et projeter images, vidéos, sons, PDF et pages titre.
 
@@ -6,7 +6,7 @@ Application HTML autonome et hors ligne pour organiser des bibliothèques de dia
 
 Ouvrir `index.html` dans Firefox, Safari ou Chromium. L'application ne requiert aucun serveur et ne transfère pas les médias sur GitHub. Les fichiers importés sont conservés localement dans le navigateur (IndexedDB). Exporter régulièrement la bibliothèque en JSON pour garder une sauvegarde portable.
 
-## Nouveau dans la 0.11.1
+## Nouveau dans la 0.12.0
 
 - **Éditer / Projeter** : un espace central d'édition en grille, distinct du mode plein écran / projection.
 - Densité de la grille réglable de 2 à 9 colonnes.
@@ -37,7 +37,7 @@ Le mode Grid est une **vue d'édition** : il ne modifie pas le rendu du diaporam
 Le code est volontairement contenu dans `index.html` (HTML/CSS/JavaScript), sans dépendances. La licence MIT s'applique au code, pas aux médias importés par les utilisateurs.
 
 
-## Version 0.11.1 — organisation visuelle
+## Version 0.12.0 — organisation visuelle
 
 - Suppression directe d'une diapositive depuis la grille centrale par la croix × (coin supérieur droit). Annulation possible par ⌘Z.
 - Suppr/Retour arrière supprime la sélection, confirmation si plusieurs médias.
@@ -46,5 +46,17 @@ Le code est volontairement contenu dans `index.html` (HTML/CSS/JavaScript), sans
 - Par sécurité, les déplacements manuels sont suspendus pendant une recherche ou un tri temporaire. La liste normale peut toujours être restaurée en effaçant la recherche et en choisissant « Ordre du diaporama ».
 - Aucun changement au stockage IndexedDB/JSON de la bibliothèque.
 
-### 0.11.1 — Indications clavier
-Les raccourcis ne sont affichés que tout en bas de Préférences. Retrait des rappels de touches de la projection, de la grille centrale, de la bibliothèque et des infobulles.
+
+### 0.12.0 — Indications clavier
+Les raccourcis clavier ne sont présentés que tout en bas de Préférences. Les aides de touches ont été retirées de la projection, du pied de l’éditeur, du panneau bibliothèque et des infobulles de suppression.
+
+
+## v0.12.0 — Présentations à dispositions multiples
+
+- Mode **Éditer** : grille unique, recherche, tri temporaire, sélection multiple et ordre canonique.
+- Mode **Projeter** : menu par diaporama `Slideshow`, `Grid`, `Columns`, `Justify`.
+- Slideshow conserve le timer pour images/pages fixes, et la durée réelle pour audio/vidéo.
+- Grid/Columns/Justify : galerie défilante sans timer, vignettes de vidéos/audio inactives ; clic pour ouvrir un média en grand, bouton Retour à la galerie.
+- Options par diaporama : nombre de colonnes, espacement, couleur de fond.
+- Ces options sont conservées dans IndexedDB et les sauvegardes JSON ; les anciens fichiers reçoivent les valeurs par défaut.
+- Aucun raccourci affiché en dehors des Préférences.
