@@ -1,4 +1,4 @@
-# Iconocratie — 0.13.2
+# Iconocratie — 0.13.3
 
 Application HTML autonome et hors ligne pour organiser des bibliothèques de diaporamas et projeter images, vidéos, sons, PDF et pages titre.
 
@@ -81,3 +81,6 @@ Le libellé de la liste de gauche est simplement « Diaporamas ». Le bouton « 
 ## 0.13.2 — Noms des images en présentation
 
 L’option « Afficher les noms des images » figure dans Options de chaque diaporama. Activée par défaut, elle affiche les légendes dans Grid, Columns et Justify ; désactivée, elle masque ces légendes, sans modifier les noms dans l’éditeur. Ce choix est conservé dans la bibliothèque JSON et dans le lecteur HTML autonome exporté.
+
+## 0.13.3 — Galeries minimalistes
+En Grid, Columns et Justify : plus de barre inférieure lorsqu'une image est agrandie ; cliquer sur l'image revient à la galerie. Les flèches haut/bas et Échap continuent à fonctionner. Slideshow garde sa barre et son timer. Le lecteur HTML autonome exporté suit la même logique.
